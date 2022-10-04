@@ -7,15 +7,20 @@ const stderr = require("test-console").stderr;
 const sinon = require('sinon');
 
 // test data //
-var todos = ['feed cat', 'do laundry', 'do dishes'];
+let todos = ['feed cat', 'do laundry', 'do dishes'];
 
-var sampleObj = {
+let sampleObj = {
   organization: 'Operation Spark',
   city: 'New Orleans, LA',
   course: {
     name: 'Bootcamp',
     language: 'JavaScript'
   }
+};
+
+let sampleObj2 = {
+  a: 1,
+  b: 2,
 };
 
 let arr = ['a', 'b', 'c', 'd'];
@@ -61,5 +66,15 @@ describe("#OddIndexesInReverse", function(){
       'd\n',
       'b\n'
     ])
+  });
+});
+
+describe("#makePropsNull", function(){
+  it('should return an object', function(){
+    assert.equal(typeof app.makePropsNull(sampleObj2), 'object');
+    assert.equal(Array.isArray(app.makePropsNull(sampleObj2)), false);
+  })
+  it('should return an object where the value at each key is null', function(){
+    assert.deepEqual(app.makePropsNull(sampleObj2), { a: null, b: null });
   });
 });

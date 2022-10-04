@@ -55,3 +55,7 @@ Create a function called `accessEvenIndexes` that takes in one parameter - `arra
 #### Problem 4
 
 Create a function called `accessOddIndexesInReverse` that takes in one parameter - `array` - which represents an array of values. This function should iterate backwards through the input array and print only the items at the odd indexes to the console.
+
+#### Problem 5
+
+Create a function called `makePropsNull` that takes in one parameter - `obj` - which represents an object. This function should iterate through the object's keys and reassign the value at each key to `null`. The function should return the modified object at the end.
