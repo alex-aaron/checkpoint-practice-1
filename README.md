@@ -7,7 +7,11 @@ To run the test code, make sure your terminal points to the correct directory by
 ```
 cd checkpoint-practice-1
 ```
+To actually run the tests, type this into your terminal:
 
+```
+npm test
+```
 
 Complete the prompts below.
 
@@ -43,3 +47,5 @@ This function should return a string like this:
 "I am learning {JavaScript} at {Operation Spark}'s {Bootcamp} course in {New Orleans, LA}."
 
 Use object access methods to access the values in the object so you can create the string.
+
+#### Problem 3
