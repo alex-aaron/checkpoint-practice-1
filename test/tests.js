@@ -8,6 +8,7 @@ const sinon = require('sinon');
 
 // test data //
 var todos = ['feed cat', 'do laundry', 'do dishes'];
+
 var sampleObj = {
   organization: 'Operation Spark',
   city: 'New Orleans, LA',
@@ -16,6 +17,8 @@ var sampleObj = {
     language: 'JavaScript'
   }
 };
+
+let arr = ['a', 'b', 'c', 'd'];
 // end test data //
 
 describe('#createNumberedList', function(){
@@ -34,5 +37,29 @@ describe("#createStringFromObj", function(){
   });
   it('should return a correct string based on the input object', function(){
     assert.equal(app.createStringFromObj(sampleObj), "I am learning JavaScript at Operation Spark's Bootcamp course in New Orleans, LA.");
+  });
+});
+
+describe("#accessEvenIndexes", function(){
+  it('should print only the items at the even indexes', function(){
+    const inspect = stdout.inspect();
+    app.accessEvenIndexes(arr);
+    inspect.restore();
+    assert.deepEqual(inspect.output, [
+      'a\n',
+      'c\n'
+    ])
+  });
+});
+
+describe("#OddIndexesInReverse", function(){
+  it('should print only the items at the odd indexes in reverse', function(){
+    const inspect = stdout.inspect();
+    app.accessOddIndexesInReverse(arr);
+    inspect.restore();
+    assert.deepEqual(inspect.output, [
+      'd\n',
+      'b\n'
+    ])
   });
 });

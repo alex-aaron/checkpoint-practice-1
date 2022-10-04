@@ -49,3 +49,9 @@ This function should return a string like this:
 Use object access methods to access the values in the object so you can create the string.
 
 #### Problem 3
+
+Create a function called `accessEvenIndexes` that takes in one parameter - `array` - which represents an array of values. This function should iterate through the input array and print only the items at the even indexes to the console.
+
+#### Problem 4
+
+Create a function called `accessOddIndexesInReverse` that takes in one parameter - `array` - which represents an array of values. This function should iterate backwards through the input array and print only the items at the odd indexes to the console.
