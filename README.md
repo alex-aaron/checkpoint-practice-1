@@ -1,5 +1,14 @@
 ### Week 1 Checkpoint Practice
 
+#### How to test code
+
+To run the test code, make sure your terminal points to the correct directory by typing this into your terminal:
+
+```
+cd checkpoint-practice-1
+```
+
+
 Complete the prompts below.
 
 #### Problem 1
@@ -17,3 +26,20 @@ createNumberedList(todos);
 3. do dishes
 ```
 #### Problem 2
+
+Create a function called `createStringFromObj` that takes in one parameter - `obj` - that looks like this:
+
+```
+var sample = {
+  organization: 'Operation Spark',
+  city: 'New Orleans, LA',
+  course: {
+    name: 'Bootcamp',
+    language: 'Javascript'
+  }
+}
+```
+This function should return a string like this:
+"I am learning {JavaScript} at {Operation Spark}'s {Bootcamp} course in {New Orleans, LA}."
+
+Use object access methods to access the values in the object so you can create the string.
