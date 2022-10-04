@@ -1,12 +1,13 @@
 {
   "dependencies": {
     "chai": "^4.3.6",
-    "mocha": "^10.0.0"
+    "mocha": "^10.0.0",
+    "sinon": "^14.0.1",
+    "test-console": "^2.0.0"
   },
   "name": "checkpoint-practice",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "mocha"
   },
